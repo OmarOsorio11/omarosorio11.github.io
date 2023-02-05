@@ -1,0 +1,34 @@
+@import url(nav.css) all;
+@import url(var.css) all;
+@import url(contact.css) all;
+@import url(mail.css) all;
+@import url(contenedor.css) all;
+@import url(iAm.css) all;
+@import url(about.css) all;
+@import url(empleoActual.css) all;
+@import url(footer.css) all;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.main-cont {
+    width: 90%;
+    margin: auto;
+}
+

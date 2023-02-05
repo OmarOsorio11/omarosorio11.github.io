@@ -1,0 +1,99 @@
+@import url(var.css) all;
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.nav-brand {
+    height: 50px;
+    padding: 5px;
+}
+
+/* Navbar Left */
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    text-decoration: none;
+    padding: 2px;
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-primary);
+}
+
+.nav-main ul li a:hover {
+    color: var(--color-supermark);
+    border-bottom: 2px solid var(--color-supermark);
+}
+
+.nav-main ul.nav-menu {
+    flex: 0;
+    margin-left: auto;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.nav-main ul li .mark {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--color-supermark);
+    color: var(--color-supermark);
+}
+
+.nav-main ul li .mark:hover {
+    background-color: var(--color-submark);
+}
+
+
+/* Responsive Button */
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+    color:var(--color-supermark);
+}
+
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .nav-main .nav-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--color-mark-link);
+        height: 50vh;
+        padding: 30px;
+        opacity: 0.9;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .nav-main .nav-menu li a {
+        color: var(--color-submark);
+    }
+}

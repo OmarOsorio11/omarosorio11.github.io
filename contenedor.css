@@ -1,0 +1,25 @@
+.main-cont .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-cont .content .left {
+    width: 10%;
+}
+
+.main-cont .content .right {
+    width: 10%;
+}
+
+.main-cont .content .center {
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-cont .content .center {
+        width: 100%;
+    }
+
+
+}

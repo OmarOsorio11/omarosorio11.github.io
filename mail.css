@@ -1,0 +1,22 @@
+.right{
+    height: 80vh;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        padding-bottom: 70px;
+}
+.mail{
+    writing-mode: vertical-lr;
+    letter-spacing: 3px;
+    color: var(--color-primary);
+}
+.mail:hover{
+    color: var(--color-supermark);
+}
+@media only screen and (max-width: 800px) {
+    .right{
+        display: none;
+    }
+}

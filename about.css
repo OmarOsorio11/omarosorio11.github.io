@@ -1,0 +1,64 @@
+.main-cont .content .center .about {
+    height: 100vh;
+}
+
+.main-cont .content .center .about h2 {
+    font-size: 36px;
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-mark);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main-cont .content .center .about .dipl {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-cont .content .center .about .dipl .a-left {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    color: var(--color-primary);
+    flex: 1;
+}
+
+.main-cont .content .center .about .dipl .a-left p {
+    margin-bottom: 20px;
+}
+
+.main-cont .content .center .about .dipl .a-left ul {
+    columns: 2;
+}
+
+.main-cont .content .center .about .dipl .a-left ul li {
+    margin: 0;
+    padding: 0 0 0 30px;
+    list-style: none;
+    background-image: url("sources/img/download.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+}
+
+
+.main-cont .content .center .about .dipl .a-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.main-cont .content .center .about .dipl .a-right img {
+    margin: 30px;
+    height: 400px;
+    width: auto;
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--color-supermark));
+    padding: 0 20px 20px 0;
+    border-radius: 0 0 20px 0;
+    border-bottom: 10px solid var(--color-supermark);
+    border-right: 10px solid var(--color-supermark);
+}
+
+.main-cont .content .center .about .dipl .a-right img:hover {
+    filter: none;
+}

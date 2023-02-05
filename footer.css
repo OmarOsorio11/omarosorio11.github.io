@@ -1,0 +1,35 @@
+#contacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-mark);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#contacto p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    color: var(--color-primary);
+    margin-bottom: 50px;
+}
+
+#contacto .cont {
+    display: flex;
+    justify-content: center;
+}
+
+#contacto .cont a {
+    color: var(--color-mark);
+    margin: 20px;
+}
+
+#contacto .cont a:hover {
+    color: var(--color-supermark);
+}

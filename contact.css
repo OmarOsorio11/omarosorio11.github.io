@@ -1,0 +1,27 @@
+.left{
+    height: 90vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.left ul{
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    padding-bottom: 70px;
+}
+.left ul li a{
+    padding: 10px;
+    color: var(--color-primary);
+}
+.left ul li a:hover{
+    color: var(--color-supermark);
+}
+
+@media only screen and (max-width: 800px) {
+    .left{
+        display: none;
+    }
+}
