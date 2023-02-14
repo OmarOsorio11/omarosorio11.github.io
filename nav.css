@@ -8,6 +8,10 @@
     height: 60px;
     margin-top: 10px;
     box-sizing: border-box;
+    position: fixed;
+    background-color: var(--color-background);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
 .nav-brand {
@@ -71,6 +75,9 @@ hr {
 
 /*Responsive*/
 @media only screen and (max-width: 800px) {
+    .nav-main{
+        width: 90%;
+    }
     .menu-btn {
         display: block;
     }
@@ -80,19 +87,28 @@ hr {
     }
 
     .nav-menu {
-        width: 15em;
-        /*left: -15em;*/
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        overflow: hidden;
-        display: block;
-        height: 10000%;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+        background-color: var(--color-mark-link);
+        color: var(--color-supermark);
+
+        padding-top: 70px;
     }
 
     .show {
-        display: block;
+        transform: translateX(-10%);
     }
 
-    .nav-main .nav-menu li a {
-        color: var(--color-submark);
-    }
+
+    
 }

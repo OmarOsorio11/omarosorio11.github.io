@@ -38,7 +38,7 @@
 /*Responsive*/
 @media only screen and (max-width: 800px) {
     #contacto {
-        height: 100vh;
+        height: auto;
     }
 
     #contacto .cont a {

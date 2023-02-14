@@ -9,30 +9,27 @@ function changeimage() {
         document.getElementById("img_change").src = srcname
     }
 }
-
+/*
 document.getElementById("m-buton").addEventListener("click", () => {
-    document.getElementById("m-buton").classList.toggle("show");
+    document.getElementById("nav-menu").classList.toggle("show");
+});
+
+*/
+document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector(".nav-menu").classList.toggle("show");
 });
 
 
-/*function sendMail() {
+let ubicacionPrincipal=window.pageXOffset;
+window.onscroll=function(){
+    
+    document.querySelector(".nav-menu").classList.remove("show");
+    let desplazamiento = window.pageYOffset;
 
-    var nombre = document.getElementById("f-name").value;
-    var mail = document.getElementById("f-mail").value;
-    var text = document.getElementById("f-message").value;
-    //Remplazando espacios por %20
-    text.trim()
-    nombre.trim()
-
-    var buscar = " ";
-    nombre = nombre.replace(new RegExp(buscar, "g"), "%20")
-    text = text.replace(new RegExp(buscar, "g"), "%20")
-    //console.log(text)
-    var source = "mailto:omarosorio489@gmail.com?subject=nombre%20" + nombre + "&body=" + text + "%20"
-    //console.log(source)
-    document.getElementById("mailto").src = source
-//mailto:me@leonidasesteban.com?subject=nombre%20omar%20&body=oasasas%20osasaso%20
-    console.log(document.getElementById("mailto").src)
-    document.getElementById("mailto").click()
-}*/
-
+    if (ubicacionPrincipal >= desplazamiento ){
+        document.querySelector(".nav-main").style.top ="0"
+    } else {
+        document.querySelector(".nav-main").style.top = "-100px"
+    }
+    ubicacionPrincipal=desplazamiento;
+}
