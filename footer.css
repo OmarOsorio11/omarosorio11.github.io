@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 #contacto h2 {
@@ -32,4 +33,15 @@
 
 #contacto .cont a:hover {
     color: var(--color-supermark);
+}
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+    #contacto {
+        height: 100vh;
+    }
+
+    #contacto .cont a {
+        margin: 10px;
+    }
 }

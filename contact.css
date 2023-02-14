@@ -5,7 +5,7 @@
 }
 .left ul{
     height: 90%;
-    margin: auto;
+    margin: auto;   
     display: flex;
     flex-direction: column;
     justify-content: end;

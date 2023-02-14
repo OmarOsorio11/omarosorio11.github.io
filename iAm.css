@@ -44,3 +44,11 @@
 .main-cont .content .center .container a:hover {
     background-color: var(--color-mark-link);
 }
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+    .main-cont .content .center .container {
+            height: auto;
+            margin-bottom: 30px;
+        }
+}

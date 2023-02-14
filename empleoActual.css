@@ -66,3 +66,26 @@
         border-color: orange;
     }
 }
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+    #empleo {
+        height: auto;
+    }
+
+    #empleo h3 {
+        font-size: 2rem;
+        font-family: 'Inconsolata', monospace;
+        text-align: center;
+        color: var(--color-supermark);
+        overflow: hidden;
+        border-right: .15em solid orange;
+        white-space: nowrap;
+        margin: auto;
+        margin-bottom: 100px;
+        letter-spacing: .15em;
+        animation:
+            typing 5s steps(12, end) infinite,
+            blink-caret .5s step-end infinite;
+    }
+}
